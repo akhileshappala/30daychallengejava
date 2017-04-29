@@ -1,0 +1,82 @@
+$(document).ready(function() {
+    $(".tabs-menu a").click(function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("current");
+        $(this).parent().siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        $(".tab-content").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
+
+
+
+    var validateEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+    $('.signup__compare').keyup(function () {
+        if (validateEmail.test($('.signup__compare').val())){
+            $('.signup__action').removeAttr('disabled');
+        } else {
+            $('.signup__action').attr('disabled','disabled');
+        }
+    });
+
+    $('.signup__action').on('click',function () {
+        alert('clicked');
+    });
+
+
+    $(document).on('click', '.close-modal', function () {
+        closeModal();
+    });
+
+    $(document).on('click','.js__top-sticky',function () {
+        closeStickyMessage();
+    });
+    
+    $(document).on('click','.js__show-gif-modal',function() {
+        insertGIF();
+        $('.modal-overlay').show();
+        $('.nafsa-modal').show();
+           
+    });
+    // alert bar
+    $(document).on('click','.alert__close',function(e) {
+        e.preventDefault();
+        $(this).closest('.custom__alert').toggle();
+    });
+
+
+    function insertGIF(){
+        var gifWrapper = document.querySelector('.gif-wrapper');
+         gifWrapper.innerHTML = '<img id="NafsaGIF" src="images/NAFSA_Shine_mobile_jan27.gif" alt="Gif Not Available">';
+         var theGif = document.getElementById('NafsaGIF');
+         theGif.addEventListener('load', gifTimer);
+    }
+
+    //set gif length here
+    var configurableGifLength = 10000;
+    function gifTimer(){
+        window.setTimeout(closeModal, configurableGifLength);
+    }
+
+    function closeModal(){
+        $('body').removeClass('no-scroll');
+        $('.modal-overlay').fadeOut();
+        $('.nafsa-modal').fadeOut();
+        closeStickyMessage();
+    }
+
+    function closeStickyMessage(){
+        var stickyMessage = document.querySelectorAll('.mobile__top-sticky')[0];
+        $(stickyMessage).fadeOut();
+    }
+
+    if($('.wistia_embed').length){
+        window._wq = window._wq || [];
+        _wq.push({ id: "_all", onReady: function(video) {
+             video.bind("end", function () {
+                console.log('done');
+                closeModal();
+            });
+        }});
+    }
+});

@@ -1,0 +1,911 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html style="" class=" js borderradius boxshadow cssgradients js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" xmlns="http://www.w3.org/1999/xhtml">
+    <head id="ctl00_MainHeader"><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="WorkArea/FrameworkUI/css/ektron.stylesheet.ashx?id=-1759591071" /><script type="text/javascript" src="WorkArea/FrameworkUI/js/ektron.javascript.ashx?id=-1028355414+1948574407+659787066+-1965253052"></script>
+        <script src="redesignjs/id.js" async="async" type="text/javascript"></script>
+        <meta charset="utf-8" /><meta content="IE=Edge;chrome=1" http-equiv="X-UA-Compatible" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"75dec0933e","applicationID":"46701912","transactionName":"YQMGZ0VUDEsHUkJaV1hJJWBnGgZdAFBDX0wYBxdDTw==","queueTime":0,"applicationTime":314,"agent":"","atts":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="robots" content="default" />
+        <!-- forces latest rendering engines/chrome frame for ie -->
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" /><link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Josefin+Sans:600|Open+Sans:600,700" rel="stylesheet" type="text/css" /><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" /><link href="redesigncss/style.min.css" rel="stylesheet" type="text/css" /><link href="redesigncss/EVENTIAUpdates.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="redesignjs/libs.min.js"></script>
+    
+        <script type="text/javascript">            
+            $(window).load(function () {
+                $('.flexslider').flexslider();
+                $('.login-modal').fancybox({ 'type': 'iframe' });
+            });
+        </script>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $('.flexslider2').flexslider();
+            });
+        </script>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $('.flexslider3').flexslider();
+            });
+        </script>
+        <link rel="icon" href="eventia.ico" type="image/x-icon" /><link rel="shortcut icon" href="eventia.ico" type="image/x-icon" />
+        <!-- THIS SECTION IS GOOGLE ANALYTICS
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1535991-1']);
+            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        THIS SECTION IS GOOGLE ANALYTICS -->
+        <!-- next two lines call the mobile nav - also a script at the end of the body -->
+        <link rel="stylesheet" href="redesigncss/responsive-slicknav.css" />
+        <script src="redesignjs/modernizr.js"></script>
+        <script src="redesignjs/s-code-contents-2b55cb49e8101095d4f135aa81ecf4853084773e.js"></script>
+        <script src="redesignjs/script.js?v2"></script>
+        <link href="redesigncss/eventia-updates.css?v2" rel="stylesheet" type="text/css" />
+<title>
+	eventia
+</title></head>
+<body class="leonardo donatello grid__custom">
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHRNWB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-WHRNWB');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<form method="post" action="index.html" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="EktronClientManager" id="EktronClientManager" value="-1759591071,1948574407,-1028355414,659787066,-1965253052" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="J47P/C+T1Lp+0BWTtMFAcIR0as2HVQBByyHBhyN8/2wkCcCdE0urWTFmvI1FdS2v49OX+DNSbcJrNm4Wd1iP70lOCjdy9z6cd2ggUtbbNymNI/Dxz0sE0PyC7VAvLXwJcLVR5PS70EUqYKzxZL5TKaJfKIoPsKqDmUeKawR8YcOFLAh08+Ce0cAIE7NvebEnOia+998ihRTsNRdTbZ1YqqonsLgwVIiNj7JKzG9H4TN6S6WVHy0MLJuENgt51xkC" />
+</div>
+    <a id="ctl00_hlLoginLogout" class="slicknav_btn nav_btn mobile_login" name="loginlink" href="https://www.eventia.org/Login/Login.aspx?retUrl=%2fDefault.aspx" style="outline: medium none;">
+		<span class="slicknav_menutxt">Login</span>
+    </a>
+	<div>
+		<div class="top row">
+			<div class="container top__actions">
+			    
+			    
+
+        <div class="twocol left">
+          <span class="pagetitle"><a href="index.html">Eventia</a></span>
+        </div>
+			
+				<div class="sixecol right nomargin functional">
+				    
+
+<nav class="utility-nav">
+    <ul>
+        
+                <li><a href='https://www.eventia.org/About_Us/Membership/'>Join</a></li>
+            
+                <li><a href='https://www.eventia.org/shop/'>view events</a></li>
+            
+                <li><a href='http://blog.eventia.org/'>Blog</a></li>
+            
+                <li><a href='https://www.eventia.org/About_Us/About_EVENTIA/Contact/Contact_EVENTIA_Staff/'>Contact</a></li>
+            
+        
+
+<li><a href="https://www.eventia.org/myeventia">My events</a></li>
+<li id="ctl00_EVENTIAFunctionalNav_IntegrationNav1_liLoginLink" class="last">
+    <a id="ctl00_EVENTIAFunctionalNav_IntegrationNav1_hlLoginLogout" name="loginlink" href="https://www.eventia.org/Login/Login.aspx?retUrl=%2fDefault.aspx">Login</a>
+</li>
+
+    </ul>
+</nav>
+
+                    <div id="ctl00_EVENTIASearch_divSearch" class="clearfix right hidden-mobile" CssClass="clearfix right hidden-mobile">
+    <input type="hidden" name="ctl00$EVENTIASearch$HiddenField1" id="ctl00_EVENTIASearch_HiddenField1" value="Pizza" />
+
+    <div id="ctl00_EVENTIASearch_Panel1">
+	
+    <input name="ctl00$EVENTIASearch$TextBoxQuery" type="text" value="Enter Search" maxlength="50" id="ctl00_EVENTIASearch_TextBoxQuery" class="searchbox" onfocus="value=&#39;&#39;" />
+    <input type="image" name="ctl00$EVENTIASearch$ImageButtonSrch" id="ctl00_EVENTIASearch_ImageButtonSrch" class="searchButton" src="images/search-bg.gif" />
+
+    
+</div>
+    
+</div>
+
+                    
+				</div>
+				<!--/fivecol-->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /top row -->
+	    
+
+        <div class="nav-bar clearfix">
+            <div class="container">
+                <ul class="nav-list menu" id="menu">
+                     <ul class='list-inline'>
+                         <li><a href='https://www.eventia.org/About_Us/Membership/'>Join</a></li><li><a href='https://www.eventia.org/shop/'>Shop</a></li><li><a href='http://blog.eventia.org/'>Blog</a></li><li><a href='https://www.eventia.org/About_Us/About_EVENTIA/Contact/Contact_EVENTIA_Staff/'>Contact</a></li>
+                         
+
+<li><a href="https://www.eventia.org/myeventia">My events</a></li>
+<li id="ctl00_EVENTIAMainMenu_IntegrationNav1_liLoginLink" class="last">
+    <a id="ctl00_EVENTIAMainMenu_IntegrationNav1_hlLoginLogout" name="loginlink" href="https://www.eventia.org/Login/Login.aspx?retUrl=%2fDefault.aspx">Login</a>
+</li>
+
+                        <li class='search-mobile'>
+                            
+                                <input type="hidden" name="ctl00$EVENTIAMainMenu$HiddenField1" id="ctl00_EVENTIAMainMenu_HiddenField1" value="Pizza" />
+
+                            <input name="ctl00$EVENTIAMainMenu$TextBoxQuery2" type="text" maxlength="50" id="ctl00_EVENTIAMainMenu_TextBoxQuery2" class="searchbox" onfocus="value=&#39;&#39;" />
+                            <input type="image" name="ctl00$EVENTIAMainMenu$ImgButtonSrch2" id="ctl00_EVENTIAMainMenu_ImgButtonSrch2" class="searchButton" src="images/search-bg.gif" />
+                        </li>           
+                     </ul>     
+                    
+                            <li><a class="main first" href='https://www.eventia.org/About_Us/'>About Us</a>
+                                
+
+<ul class="uparrowdiv">
+    <li><a class='fdlink' href='https://www.eventia.org/About_Us/'>About Us</a></li>
+    
+            <li><a href='https://www.eventia.org/About_Us/About_EVENTIA/'>» About eventia</a></li>        
+        
+            <li><a href='https://www.eventia.org/About_Us/About_International_Education/'>» About International Education</a></li>        
+        
+            <li><a href='https://www.eventia.org/About_Us/Membership/'>» Membership</a></li>        
+        
+            <li><a href='https://www.eventia.org/About_Us/Partner_with_EVENTIA/'>» Partner with amrita</a></li>        
+        
+            <li><a href='https://www.eventia.org/About_Us/Support_and_Donate/Support_EVENTIA/'>» Support</a></li>        
+        
+</ul>
+
+                            </li>
+                        
+                            <li><a class="main first" href='https://www.eventia.org/Programs_and_Events/'>Programs &amp; Events</a>
+                                
+
+<ul class="uparrowdiv">
+    <li><a class='fdlink' href='https://www.eventia.org/Programs_and_Events/'>Programs &amp; Events</a></li>
+    
+            <li><a href='https://www.eventia.org/Programs_and_Events/Cuba_Engagement_Initiative/'>» cse</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Diversity/EVENTIA_Diversity_Programs/'>» ece</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/EA_Retreat/EVENTIA_Strategic_Retreat_for_Education_Abroad_Leaders/'>» mech</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Global_Learning_Colloquia/'>» eee</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Management_Development_Progam/'>»arts </a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Presidents_Day/Presidents_Day_at_EVENTIA_2017/'>» boitech</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Provosts_Summit/Provosts_Summit_at_EVENTIA_2017/'>» yyy</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Seminar_on_Peace_and_the_Global_Civil_Society/'>» yyy</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Symposium_on_Leadership/'>» yyyy</a></li>        
+        
+</ul>
+
+                            </li>
+                        
+                            <li><a class="main first" href='https://www.eventia.org/Connect_and_Network/'>Connect &amp; Network</a>
+                                
+
+<ul class="uparrowdiv">
+    <li><a class='fdlink' href='https://www.eventia.org/Connect_and_Network/'>Connect &amp; Network</a></li>
+    
+            <li><a href='https://www.eventia.org/Connect_and_Network/Networking_with_EVENTIA/'>» Networking with EVENTIA</a></li>        
+        
+            <li><a href='https://www.eventia.org/Connect_and_Network/EVENTIA_Regions/'>»amrita Regions</a></li>        
+        
+            <li><a href='https://www.eventia.org/Connect_and_Network/Volunteer/Overview_of_EVENTIA_Leadership/'>» Volunteer</a></li>        
+        
+            <li><a href='https://www.eventia.org/directory'>» Member Directory</a></li>        
+        
+</ul>
+
+                            </li>
+                        
+                            <li><a class="main first" href='https://www.eventia.org/Policy_and_Advocacy/'>Policy &amp; Advocacy</a>
+                                
+
+<ul class="uparrowdiv">
+    <li><a class='fdlink' href='https://www.eventia.org/Policy_and_Advocacy/'>Policy &amp; Advocacy</a></li>
+    
+            <li><a href='https://www.eventia.org/Policy_and_Advocacy/What_We_Stand_For/'>» What We Stand For</a></li>        
+        
+            <li><a href='https://www.eventia.org/Policy_and_Advocacy/Policy_Resources/'>» Policy Resources</a></li>        
+        
+            <li><a href='https://www.eventia.org/Policy_and_Advocacy/Policy_Blog/'>» Policy Blog</a></li>        
+        
+            <li><a href='https://www.eventia.org/Policy_and_Advocacy/Take_Action/'>» Take Action</a></li>        
+        
+</ul>
+
+                            </li>
+                        
+                            <li><a class="main first" href='https://www.eventia.org/Professional_Resources/'>Professional Resources</a>
+                                
+
+<ul class="uparrowdiv">
+    <li><a class='fdlink' href='https://www.eventia.org/Professional_Resources/'>Professional Resources</a></li>
+    
+            <li><a href='https://www.eventia.org/Advisers_Manual_360/Welcome_to_the_EVENTIA_Adviser_s_Manual_360/'>» Adviser&#39;s Manual 360</a></li>        
+        
+            <li><a href='https://www.eventia.org/Professional_Resources/Browse_by_Interest/'>» Browse by Interest</a></li>        
+        
+            <li><a href='https://www.eventia.org/Professional_Resources/Career_Center/'>» Career Center</a></li>        
+        
+            <li><a href='https://www.eventia.org/Professional_Resources/Learning_and_Training/'>» Learning &amp; Training</a></li>        
+        
+            <li><a href='https://www.eventia.org/Professional_Resources/Publications/'>» Publications</a></li>        
+        
+            <li><a href='https://www.eventia.org/Professional_Resources/Research_and_Trends/'>» Research &amp; Trends</a></li>        
+        
+</ul>
+
+                            </li>
+                        
+                            <li><a class="main first" href='https://www.eventia.org/Annual_Conference/Annual_Conference___Expo/'>Annual Conference</a>
+                                
+
+<ul class="uparrowdiv">
+    <li><a class='fdlink' href='https://www.eventia.org/Annual_Conference/Annual_Conference___Expo/'>Annual Conference</a></li>
+    
+            <li><a href='https://www.eventia.org/Annual_Conference/Registration/'>» Registration</a></li>        
+        
+            <li><a href='https://www.eventia.org/Annual_Conference/Housing_and_Travel/'>» Housing &amp; Travel</a></li>        
+        
+            <li><a href='https://www.eventia.org/Annual_Conference/Program/'>» Program</a></li>        
+        
+            <li><a href='https://www.eventia.org/Annual_Conference/Exhibiting_and_Sponsoring/About_Exhibiting/'>» Expo Hall</a></li>        
+        
+            <li><a href='https://www.eventia.org/Annual_Conference/Networking/Networking_Opportunities/'>» Networking</a></li>        
+        
+</ul>
+
+                            </li>
+                        
+
+                </ul>
+            </div>
+            <!--/container-->
+        </div>
+        <!--/nav_bar-->
+
+
+        
+
+    
+
+<div class="main__alert custom__alert">
+			<div class="alert__container container">
+				<p>Special Alert: New Executive Order Calls for H-1B Reform. <a href="https://www.eventia.org/Professional_Resources/Browse_by_Interest/International_Students_and_Scholars/Buy_American_Hire_American_Executive_Order/?impid=hp:eo_h1b_special_alert:alert_bar:pm_2017_04_20">Read the EVENTIA advisory</a></p>
+				<a href="index.html#" class="alert__close"><i class="fa fa-times"></i></a>
+			</div>
+		</div>
+		<div class="container main-content homely container__custom">
+			<div class="clearfix">			    
+                <div class="row">
+		            <div class="eightcol main__teaser__col f-left">
+			            
+<!-- begin slider -->
+
+        <div class="flexslider height__teaser main__teaser">
+            <ul class="slides">
+                
+        <li>
+            <header class="slide-hd_home1">
+                  <h2 class="slider-title"><a href='https://www.eventia.org/Annual_Conference/Annual_Conference___Expo/?impid=hp:ac17_reg_housing_open:rotator:pm_2017_02_28'>You’re Invited</a></h2>
+                  <h3 class="slide-subtitle"><a href='https://www.eventia.org/Annual_Conference/Annual_Conference___Expo/?impid=hp:ac17_reg_housing_open:rotator:pm_2017_02_28'>A special welcome is extended to all global international educators attending EVENTIA 2017</a></h3>
+             </header>
+            <a href='https://www.eventia.org/Annual_Conference/Annual_Conference___Expo/?impid=hp:ac17_reg_housing_open:rotator:pm_2017_02_28'><img alt='2017 Registration' class="main-img" src='_/Image/_/ac17design/la_welcome_630x440.jpg'></a> 
+         </li>
+    
+        <li>
+            <header class="slide-hd_home1">
+                  <h2 class="slider-title"><a href='https://www.eventia.org/About_Us/About_EVENTIA/EVENTIA_Supports__YouAreWelcomeHere_Campaign/?impid=hp:youarewelcome_campaign:rotator:pm_2017_03_31'>Join Us</a></h2>
+                  <h3 class="slide-subtitle"><a href='https://www.eventia.org/About_Us/About_EVENTIA/EVENTIA_Supports__YouAreWelcomeHere_Campaign/?impid=hp:youarewelcome_campaign:rotator:pm_2017_03_31'>EVENTIA proudly supports the #YouAreWelcomeHere campaign</a></h3>
+             </header>
+            <a href='https://www.eventia.org/About_Us/About_EVENTIA/EVENTIA_Supports__YouAreWelcomeHere_Campaign/?impid=hp:youarewelcome_campaign:rotator:pm_2017_03_31'><img alt='You Are Welcome Here' class="main-img" src='_/Image/_/youarewelcome_630x440.jpg'></a> 
+         </li>
+    
+        <li>
+            <header class="slide-hd_home1">
+                  <h2 class="slider-title"><a href='https://www.eventia.org/Professional_Resources/Browse_by_Interest/International_Students_and_Scholars/Executive_Order_Travel_Ban__EVENTIA_Resources/?impid=hp:travel_ban_resources:rotator:pm_2017_01_30'>Travel Restrictions</a></h2>
+                  <h3 class="slide-subtitle"><a href='https://www.eventia.org/Professional_Resources/Browse_by_Interest/International_Students_and_Scholars/Executive_Order_Travel_Ban__EVENTIA_Resources/?impid=hp:travel_ban_resources:rotator:pm_2017_01_30'>Visa guidance and response to executive orders restricting U.S. entry</a></h3>
+             </header>
+            <a href='https://www.eventia.org/Professional_Resources/Browse_by_Interest/International_Students_and_Scholars/Executive_Order_Travel_Ban__EVENTIA_Resources/?impid=hp:travel_ban_resources:rotator:pm_2017_01_30'><img alt='Travel Ban' class="main-img" src='_/Image/_/travel_ban_630x440.jpg'></a> 
+         </li>
+    
+        <li>
+            <header class="slide-hd_home1">
+                  <h2 class="slider-title"><a href='https://www.eventia.org/Shop/detail.aspx?id=2061'>Valuable Resource</a></h2>
+                  <h3 class="slide-subtitle"><a href='https://www.eventia.org/Shop/detail.aspx?id=2061'>New from EVENTIA, a must-read for anyone involved in recruiting international students</a></h3>
+             </header>
+            <a href='https://www.eventia.org/Shop/detail.aspx?id=2061'><img alt='International Student Recruitment' class="main-img" src='_/Image/_/intl_student_recruit_630x440.jpg'></a> 
+         </li>
+    
+        <li>
+            <header class="slide-hd_home1">
+                  <h2 class="slider-title"><a href='https://www.eventia.org/Policy_and_Advocacy/Policy_Resources/Policy_Recommendations/Seven_Important_Facts_about_International_Education/?impid=hp:seven_facts:rotator:mb_2017_01_12'>Seven Vital Facts</a></h2>
+                  <h3 class="slide-subtitle"><a href='https://www.eventia.org/Policy_and_Advocacy/Policy_Resources/Policy_Recommendations/Seven_Important_Facts_about_International_Education/?impid=hp:seven_facts:rotator:mb_2017_01_12'>Why the work of international educators everywhere is critical</a></h3>
+             </header>
+            <a href='https://www.eventia.org/Policy_and_Advocacy/Policy_Resources/Policy_Recommendations/Seven_Important_Facts_about_International_Education/?impid=hp:seven_facts:rotator:mb_2017_01_12'><img alt='Seven Vital Facts' class="main-img" src='_/Image/_/seven_facts_630x440.jpg'></a> 
+         </li>
+    
+            </ul>
+        </div>
+    
+
+<!-- end slider -->
+						
+		            </div>
+		            <div class="fourcol last height__teaser area__value-statement f-left">
+			            <img id="ctl00_ContentPlaceHolder1_EVENTIAValueStatement_imgBackground" class="area__value-statement__bg" src="uploadedImages/Utility_Content/Homepage/Branding_Statements/wallpaper_012717.jpg" alt="Value Statement Background" />
+<div class="area__value-statement__content">
+	<p style="padding-top: 62px; font-size: 17px; line-height: 1.7em; font-family: &quot;Open Sans&quot;, sans-serif;">EVENTIA: Association of International Educators is the world's largest nonprofit association dedicated to international education and exchange, working to advance policies and practices that ensure a more interconnected, peaceful world today and for generations to come.</p>
+</div>
+		            </div>
+		            <div class="clearfix"></div>
+	            </div>
+	            <div class="row">
+		            
+    <div class="home_subfeature top1 home__subfeature clearfix">
+        
+        <div id="ctl00_ContentPlaceHolder1_EVENTIAEngagementBlocks_lvHighlights_ctrl0_divContentWrapper" class="threecol home__subfeature__col">
+            <div id="ctl00_ContentPlaceHolder1_EVENTIAEngagementBlocks_lvHighlights_ctrl0_cBlock">
+	<a href="https://www.eventia.org/ac17workshops"><img class="border" src="_/Image/_/ac17design/ac17_workshops_210x150.jpg" alt="Preconference Workshops" /></a> <h2>Strengthen Expertise</h2>
+<p>Master essential skills and gain insights on recent trends.</p>
+</div>
+            <a href="https://www.eventia.org/ac17workshops" id="ctl00_ContentPlaceHolder1_EVENTIAEngagementBlocks_lvHighlights_ctrl0_lnkURL"><img alt="learn" src="images/btn_learn.gif"></a> 
+            
+        </div>
+    
+        <div id="ctl00_ContentPlaceHolder1_EVENTIAEngagementBlocks_lvHighlights_ctrl1_divContentWrapper" class="threecol home__subfeature__col">
+            <div id="ctl00_ContentPlaceHolder1_EVENTIAEngagementBlocks_lvHighlights_ctrl1_cBlock">
+	<a href="https://www.eventia.org/login/login.aspx?RETURNURL=http%3a%2f%2foneportal.eventia.org%3a80%2fEVENTIA_Live%2fExperientSSO%2fSSO.aspx%3fretUrl%3dhttp%3a%2f%2fregistration.experientevent.com%2fshowAIE171%2fDefault.aspx/?impid=hp:ac17_reg_open:box_1:pm_2017_02_28"><img src="_/Image/_/ac17design/ac17_hp_regnow_210x150.jpg" alt="EVENTIA 2017 Registration Open" class="border" /></a><h2>Los Angeles Awaits</h2>
+<p>Don’t miss the must-attend international education event.</p>
+</div>
+            <a href="https://www.eventia.org/login/login.aspx?RETURNURL=http%3a%2f%2foneportal.eventia.org%3a80%2fEVENTIA_Live%2fExperientSSO%2fSSO.aspx%3fretUrl%3dhttp%3a%2f%2fregistration.experientevent.com%2fshowAIE171%2fDefault.aspx/?impid=hp:ac17_reg_open:box_1:pm_2017_02_28" id="ctl00_ContentPlaceHolder1_EVENTIAEngagementBlocks_lvHighlights_ctrl1_lnkURL"><img alt="learn" src="images/btn_learn.gif"></a> 
+            
+        </div>
+    
+        <div id="ctl00_ContentPlaceHolder1_EVENTIAEngagementBlocks_lvHighlights_ctrl2_divContentWrapper" class="threecol home__subfeature__col">
+            <div id="ctl00_ContentPlaceHolder1_EVENTIAEngagementBlocks_lvHighlights_ctrl2_cBlock">
+	<a href="https://www.eventia.org/Annual_Conference/Registration/EVENTIA_2017_Membership_Savings/?impid=hp:ac17_mem_savings:box_2:pm_2017_02_10"><img src="_/Image/_/ac17_memsavings_210x150.jpg" alt="EVENTIA 2017 Membership Savings" class="border" /></a><h2>Member Advantage</h2>
+<p>Save on EVENTIA 2017 registration, programs as a member.</p>
+</div>
+            <a href="https://www.eventia.org/Annual_Conference/Registration/EVENTIA_2017_Membership_Savings/?impid=hp:ac17_mem_savings:box_2:pm_2017_02_10" id="ctl00_ContentPlaceHolder1_EVENTIAEngagementBlocks_lvHighlights_ctrl2_lnkURL"><img alt="learn" src="images/btn_learn.gif"></a> 
+            
+        </div>
+    
+        <div id="ctl00_ContentPlaceHolder1_EVENTIAEngagementBlocks_lvHighlights_ctrl3_divContentWrapper" class="threecol home__subfeature__col last">
+            <div id="ctl00_ContentPlaceHolder1_EVENTIAEngagementBlocks_lvHighlights_ctrl3_cBlock">
+	<a href="https://www.eventia.org/Professional_Resources/Browse_by_Interest/International_Students_and_Scholars/Executive_Order_Travel_Ban__EVENTIA_Resources/?impid=hp:travel_ban_update:box_3:jw_2017_03_07"><img class="border" src="_/Image/_/airport_210x150.jpg" alt="Travel Ban" /></a> <h2>Critical Updates</h2>
+<p>EVENTIA provides vital guidance on the revised entry ban.</p>
+</div>
+            <a href="https://www.eventia.org/Professional_Resources/Browse_by_Interest/International_Students_and_Scholars/Executive_Order_Travel_Ban__EVENTIA_Resources/?impid=hp:travel_ban_update:box_3:jw_2017_03_07" id="ctl00_ContentPlaceHolder1_EVENTIAEngagementBlocks_lvHighlights_ctrl3_lnkURL"><img alt="learn" src="images/btn_learn.gif"></a> 
+            
+        </div>
+    
+        <div class="clearfix"></div>
+    </div>
+          
+					
+	            </div>
+	            <div class="row">
+		            <div class="lg__widgets clearfix">
+			            
+
+    <div class="fourcol latest_news list_shaded padding2 lg__widgets__single f-left">
+	    <div id="ctl00_ContentPlaceHolder1_EVENTIAWidgets_cBlock1" class="lates-jobs__list job-widget">
+	<h2 class="impact topalign">Latest Jobs</h2>
+<p><script type="text/javascript" language="JavaScript" src="http://jobregistry.eventia.org/services/widgets/js-activejobs-plugin.cfm?&amp;maxjobs=4"></script></p>
+<div class="views"><a href="http://jobregistry.eventia.org/jobseekers/" title="View all Jobs" class="'view-all-link">View all Jobs</a></div>
+</div>						
+    </div>
+	<div class="fourcol latest_news list_shaded lg__widgets__single f-left">
+		<div id="ctl00_ContentPlaceHolder1_EVENTIAWidgets_cBlock2">
+	<ul>
+<li><h2 class="impact topalign">Upcoming Events</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </li>
+<li><span class="date">Apr<em>24</em></span><a href="https://www.eventia.org/WorkArea/linkit.aspx?LinkIdentifier=ID&amp;ItemID=57835">Spanish Visas for Education Abroad Programs</a></li>
+<li><span class="date">Apr<em>27</em></span><a href="https://www.eventia.org/WorkArea/linkit.aspx?LinkIdentifier=id&amp;ItemID=54003">Assessing Global Learning: Methods, Metrics, and Meaning</a></li>
+<li><span class="date">May<em>04</em></span><a href="https://www.eventia.org/WorkArea/linkit.aspx?LinkIdentifier=id&amp;ItemID=57695">Successful Strategies for Diversifying International Recruitment</a></li>
+<li><span class="date">May<em>10</em></span><a href="https://www.eventia.org/WorkArea/linkit.aspx?LinkIdentifier=id&amp;ItemID=57826">Italian Visas for Education Abroad Programs</a></li>
+<!--<li><span class="date">May<em>28</em></span><a href="/WorkArea/linkit.aspx?LinkIdentifier=id&amp;ItemID=169">EVENTIA 2017 Annual Conference &amp; Expo</a></li>--><li class="view"><a href="https://www.eventia.org/WorkArea/linkit.aspx?LinkIdentifier=ID&amp;ItemID=33930" title="View all Events">View all Events</a></li>
+</ul>
+</div>							
+	</div>
+	<div class="fourcol last lg__widgets__single f-left">
+		<div id="ctl00_ContentPlaceHolder1_EVENTIAWidgets_cBlock3">
+	<div class="social__widget" style="border: none;"><!--<h2 class="impact">Connect With Us</h2>--><div id="tabs-container"><ul class="tabs-menu">
+<li class="current"><a class="tab-ico__twitter" href="index.html#tab-1"><em class="fa fa-twitter"></em></a></li>
+<li><a class="tab-ico__facebook" href="index.html#tab-2"><em class="fa fa-facebook"></em></a><br /></li>
+<!--<li><a class="tab-ico__linkedin" href="#tab-3"><em class="fa fa-linkedin"></em></a><br /></li>--></ul>
+<div class="tab" style="border: 1px solid rgb(226, 226, 226);"><div class="tab-content twitter-tab" id="tab-1"><div class="tab-content__header"><ul class="list-inline">
+<li class="tab-content__header__ico"><em class="fa fa-twitter"></em></li>
+<li class="tab-content__header__post-type"><p>Latest Posts</p>
+</li>
+<li class="tab-content__header__goto-btn"><a class="tab-content__header__btn" href="https://www.eventia.org/twitter">Follow @EVENTIA on Twitter</a></li>
+</ul>
+
+
+
+
+
+
+                 </div>
+<div class="tab-content__body"><p style="margin-bottom: -10px;"><a class="twitter-timeline" href="https://twitter.com/EVENTIA" data-widget-id="730486285190766596" data-chrome="noheader nofooter">Latest Tweet by @EVENTIA</a><script type="text/javascript"><!--
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+//--></script></p>
+</div>
+</div>
+<div class="tab-content facebook-tab" id="tab-2"><div class="tab-content__header"><ul class="list-inline">
+<li class="tab-content__header__ico"><em class="fa fa-facebook"></em></li>
+<li class="tab-content__header__post-type"><p>Latest Posts</p>
+</li>
+<li class="tab-content__header__goto-btn"><a class="tab-content__header__btn" href="https://www.facebook.com/eventia">Follow EVENTIA on Facebook</a></li>
+</ul>
+
+
+
+
+
+
+				 </div>
+<div class="tab-content__body"><p style="margin-bottom: -10px;"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Feventia%2F&amp;tabs=timeline&amp;width=240&amp;height=250&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId" width="240" height="250" style="border: none; overflow: hidden;" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+
+
+
+
+
+ </p>
+</div>
+</div>
+<div class="tab-content linkedin-tab" id="tab-3"><div class="tab-content__header"><ul class="list-inline">
+<li class="tab-content__header__ico"><em class="fa fa-linkedin"></em></li>
+<li class="tab-content__header__post-type"><p>Latest Posts</p>
+</li>
+<li class="tab-content__header__goto-btn"><a class="tab-content__header__btn" href="index.html#">Follow EVENTIA on Linkedin</a></li>
+</ul>
+
+
+
+
+
+
+				 </div>
+<div class="tab-content__body"><p><a href="https://www.eventia.org/linkedin">Join our LinkedIn group</a> and connect with colleagues in the field.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>							
+	</div>
+
+			            <div class="clearfix"></div>
+		            </div>
+	            </div>
+			</div>
+		</div>
+
+
+
+		<div class="footer-bg">
+			<div class="container">
+				<div class="row footer-nav">
+				    
+        <ul class="toplist left">
+            
+        <li id="ctl00_EVENTIAFooterNavbar_lvFooterNav_ctrl0_liItem" class="first"><a href='https://www.eventia.org/About_Us/Membership/'>Join EVENTIA</a></li>
+    
+        <li id="ctl00_EVENTIAFooterNavbar_lvFooterNav_ctrl1_liItem"><a href='https://www.eventia.org/shop/'>Shop EVENTIA</a></li>
+    
+        <li id="ctl00_EVENTIAFooterNavbar_lvFooterNav_ctrl2_liItem"><a href='https://www.eventia.org/About_Us/About_EVENTIA/Press/For_the_Media/'>Media</a></li>
+    
+        <li id="ctl00_EVENTIAFooterNavbar_lvFooterNav_ctrl3_liItem"><a href='https://www.eventia.org/About_Us/About_EVENTIA/Contact/Contact_EVENTIA_Staff/'>Contact</a></li>
+    
+        <li id="ctl00_EVENTIAFooterNavbar_lvFooterNav_ctrl4_liItem"><a href='https://www.eventia.org/marketplace'>IE Marketplace</a></li>
+    
+        </ul>
+    
+
+                    <ul id="ctl00_EVENTIASocialLinks_ulSocial" class="social">
+    <li class="first">Follow</li> 
+   
+<!--                <li>
+                    <a href='http://www.twitter.com'><img alt="icon" src='uploadedImages/Utility_Content/Homepage/Social_Links/icon_twitter.gif?n=8872' /></a>
+                </li>-->
+        
+<!--                <li>
+                    <a href='http://www.facebook.com'><img alt="icon" src='uploadedImages/Utility_Content/Homepage/Social_Links/icon_fb.gif?n=3877' /></a>
+                </li>-->
+        
+<!--                <li>
+                    <a href='http://www.linkedin.com'><img alt="icon" src='uploadedImages/Utility_Content/Homepage/Social_Links/icon_linkedin.gif?n=7375' /></a>
+                </li>-->
+        
+
+                <li>
+                    <a href="https://www.eventia.org/twitter" onmouseout="document.twitter.src='/_/Image/_/icon_twitter.png'" onmouseover="document.twitter.src='/_/Image/_/icon_twitter_over.png'"><img alt="icon" name="twitter" src="_/Image/_/icon_twitter.png" /></a>
+                </li>
+        
+                <li>
+                    <a href="https://www.eventia.org/facebook" onmouseout="document.facebook.src='/_/Image/_/icon_facebook.png'" onmouseover="document.facebook.src='/_/Image/_/icon_facebook_over.png'"><img alt="icon" name="facebook" src="_/Image/_/icon_facebook.png" /></a>
+                </li>
+        
+                <li>
+                    <a href="https://www.eventia.org/linkedin" onmouseout="document.linkedin.src='/_/Image/_/icon_linkedin.png'" onmouseover="document.linkedin.src='/_/Image/_/icon_linkedin_over.png'"><img alt="icon" name="linkedin" src="_/Image/_/icon_linkedin.png" /></a>
+                </li>
+        
+<!--                <li>
+                    <a href="/rss" onmouseout="document.rss.src='/_/Image/_/icon_rss.png'" onmouseover="document.rss.src='/_/Image/_/icon_rss_over.png'"><img alt="icon" name="rss" src="/_/Image/_/icon_rss.png" /></a>
+                </li> -->
+
+   </ul>
+               
+				</div>
+				<!--/ row-->
+                
+        <div class="row clearfix no_bullets footer-links">
+            
+        <div class="twocol">
+            <ul>
+                <li>
+                    <h4><a class='fdlink' href='https://www.eventia.org/About_Us/'>About Us</a></h4>
+                </li>
+                
+            <li><a href='https://www.eventia.org/About_Us/About_EVENTIA/'>About EVENTIA</a></li>        
+        
+            <li><a href='https://www.eventia.org/About_Us/About_International_Education/'>About International Education</a></li>        
+        
+            <li><a href='https://www.eventia.org/About_Us/Membership/'>Membership</a></li>        
+        
+            <li><a href='https://www.eventia.org/About_Us/Partner_with_EVENTIA/'>Partner with EVENTIA</a></li>        
+        
+            <li><a href='https://www.eventia.org/About_Us/Support_and_Donate/Support_EVENTIA/'>Support/Donate</a></li>        
+        
+
+
+            </ul>
+        </div>
+    
+        <div class="twocol">
+            <ul>
+                <li>
+                    <h4><a class='fdlink' href='https://www.eventia.org/Programs_and_Events/'>Programs &amp; Events</a></h4>
+                </li>
+                
+            <li><a href='https://www.eventia.org/Programs_and_Events/Cuba_Engagement_Initiative/'>Cuba Engagement Initiative</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Diversity/EVENTIA_Diversity_Programs/'>Diversity Programs</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/EA_Retreat/EVENTIA_Strategic_Retreat_for_Education_Abroad_Leaders/'>Education Abroad Strategic Retreats</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Global_Learning_Colloquia/'>Global Learning Colloquia</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Management_Development_Progam/'>Management Development Program</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Presidents_Day/Presidents_Day_at_EVENTIA_2017/'>Presidents Day</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Provosts_Summit/Provosts_Summit_at_EVENTIA_2017/'>Provosts Summit</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Seminar_on_Peace_and_the_Global_Civil_Society/'>Seminar on Peace and the Global Civil Society</a></li>        
+        
+            <li><a href='https://www.eventia.org/Programs_and_Events/Symposium_on_Leadership/'>Symposium on Leadership</a></li>        
+        
+
+
+            </ul>
+        </div>
+    
+        <div class="twocol">
+            <ul>
+                <li>
+                    <h4><a class='fdlink' href='https://www.eventia.org/Connect_and_Network/'>Connect &amp; Network</a></h4>
+                </li>
+                
+            <li><a href='https://www.eventia.org/Connect_and_Network/Networking_with_EVENTIA/'>Networking with EVENTIA</a></li>        
+        
+            <li><a href='https://www.eventia.org/Connect_and_Network/EVENTIA_Regions/'>EVENTIA Regions</a></li>        
+        
+            <li><a href='https://www.eventia.org/Connect_and_Network/Volunteer/Overview_of_EVENTIA_Leadership/'>Volunteer</a></li>        
+        
+            <li><a href='https://www.eventia.org/directory'>Member Directory</a></li>        
+        
+
+
+            </ul>
+        </div>
+    
+        <div class="twocol">
+            <ul>
+                <li>
+                    <h4><a class='fdlink' href='https://www.eventia.org/Policy_and_Advocacy/'>Policy &amp; Advocacy</a></h4>
+                </li>
+                
+            <li><a href='https://www.eventia.org/Policy_and_Advocacy/What_We_Stand_For/'>What We Stand For</a></li>        
+        
+            <li><a href='https://www.eventia.org/Policy_and_Advocacy/Policy_Resources/'>Policy Resources</a></li>        
+        
+            <li><a href='https://www.eventia.org/Policy_and_Advocacy/Policy_Blog/'>Policy Blog</a></li>        
+        
+            <li><a href='https://www.eventia.org/Policy_and_Advocacy/Take_Action/'>Take Action</a></li>        
+        
+
+
+            </ul>
+        </div>
+    
+        <div class="twocol">
+            <ul>
+                <li>
+                    <h4><a class='fdlink' href='https://www.eventia.org/Professional_Resources/'>Professional Resources</a></h4>
+                </li>
+                
+            <li><a href='https://www.eventia.org/Advisers_Manual_360/Welcome_to_the_EVENTIA_Adviser_s_Manual_360/'>Adviser&#39;s Manual 360</a></li>        
+        
+            <li><a href='https://www.eventia.org/Professional_Resources/Browse_by_Interest/'>Browse by Interest</a></li>        
+        
+            <li><a href='https://www.eventia.org/Professional_Resources/Career_Center/'>Career Center</a></li>        
+        
+            <li><a href='https://www.eventia.org/Professional_Resources/Learning_and_Training/'>Learning &amp; Training</a></li>        
+        
+            <li><a href='https://www.eventia.org/Professional_Resources/Publications/'>Publications</a></li>        
+        
+            <li><a href='https://www.eventia.org/Professional_Resources/Research_and_Trends/'>Research &amp; Trends</a></li>        
+        
+
+
+            </ul>
+        </div>
+    
+        <div class="twocol">
+            <ul>
+                <li>
+                    <h4><a class='fdlink' href='https://annual_conference/Annual_Conference___Expo/'>Annual Conference</a></h4>
+                </li>
+                
+            <li><a href='https://www.eventia.org/Annual_Conference/Registration/'>Registration</a></li>        
+        
+            <li><a href='https://www.eventia.org/Annual_Conference/Housing_and_Travel/'>Housing &amp; Travel</a></li>        
+        
+            <li><a href='https://www.eventia.org/Annual_Conference/Program/'>Program</a></li>        
+        
+            <li><a href='https://www.eventia.org/Annual_Conference/Exhibiting_and_Sponsoring/About_Exhibiting/'>Expo Hall</a></li>        
+        
+            <li><a href='https://www.eventia.org/Annual_Conference/Networking/Networking_Opportunities/'>Networking</a></li>        
+        
+
+
+            </ul>
+        </div>
+    
+        </div>
+    
+
+                
+
+        
+        <div class="footer-address">
+            <div id="ctl00_EVENTIAFooterAddress_cBlock">
+	<p><a class="dmcareveal" href="https://www.eventia.org/Legal_Information/EVENTIA_Copyright___Infringements/">Copyright <span class="dmca">(and DMCA) </span>
+© 1998-<script src="_/currentyear.js" type="text/javascript"></script><script type="text/javascript"><!--
+document.write(year)
+//--></script>.</a> EVENTIA. All Rights Reserved. <a href="https://www.eventia.org/termsofuse">Terms of Use</a> | <a href="https://www.eventia.org/privacypolicy">Privacy Policy</a></p>
+<p>EVENTIA: Association of International Educators<br />1307 New York Avenue NW, 8th Floor, Washington, DC 20005-4701<br />T: 1.202.737.3699 - F: 1.202.737.3657</p>
+</div>            
+        </div><!--/ row-->
+                <!-- EktronView Control... -->
+                
+<script language="Javascript" type="text/javascript">
+    function ecmPopUpWindow(url, hWind, nWidth, nHeight, nScroll, nResize) {
+        var popupwin,  cToolBar;
+        cToolBar = 'toolbar=0,location=0,directories=0,status=' + nResize + ',menubar=0,scrollbars=' + nScroll + ',resizable=' + nResize + ',width=' + nWidth + ',height=' + nHeight;
+        popupwin = window.open(url, hWind, cToolBar);
+        return popupwin;
+    }
+</script>
+
+
+
+
+                <!-- End EktronView COntrol... -->
+								
+			</div>
+			<!--/container-->
+		</div>
+		<!--/footer-bg-->
+		<!-- End Document ================================================== -->
+		<!-- JS
+    ================================================== -->
+		<!--slight variant on Chris Coyier's http://css-tricks.com/convert-menu-to-dropdown/ -->
+		<script type="text/javascript">
+		    $(document).ready(function () {
+		        // Create the dropdown bases
+		        $("<select />").appendTo(".navigation nav");
+		        // Create default option "Go to..."
+		        $("<option />", {
+		            "selected": "selected",
+		            "value": "",
+		            "text": "Go to..."
+		        }).appendTo("nav select");
+		        // Populate dropdowns with the first menu items
+		        $(".navigation nav li a").each(function () {
+		            var el = $(this);
+		            $("<option />", {
+		                "value": el.attr("href"),
+		                "text": el.text()
+		            }).appendTo("nav select");
+		        });
+		        //make responsive dropdown menu actually work           
+		        $("nav select").change(function () {
+		            window.location = $(this).find("option:selected").val();
+		        });
+		    });
+		    $(".nav-arrow").click(function () {
+		        var ul = $(this).next("ul");
+		        if (ul.is(":hidden")) {
+		            ul.slideDown();
+		            ul.addClass("relative");
+		        } else {
+		            ul.slideUp();
+		        }
+		    });
+		</script>
+	</div>
+	<!--modal window-->
+	<script type="text/javascript">
+	    function overlay() {
+	        el = document.getElementById("overlay");
+	        el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+	    }
+	</script>
+	<script type="text/javascript">
+	    //<![CDATA[
+	    var theForm = document.forms['aspnetForm'];
+	    if (!theForm) {
+	        theForm = document.aspnetForm;
+	    }
+	    function __doPostBack(eventTarget, eventArgument) {
+	        if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+	            theForm.__EVENTTARGET.value = eventTarget;
+	            theForm.__EVENTARGUMENT.value = eventArgument;
+	            theForm.submit();
+	        }
+	    }
+	    //]]>
+	</script>
+
+	<script src="redesignjs/WebResource.js" type="text/javascript"></script>
+</form>
+<!-- Old SiteCatalyst code version: H.25.2.
+Copyright 1996-2013 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com
+<script language="JavaScript" type="text/javascript" src="http://www.eventia.org/js/s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=""
+s.server=""
+s.channel=""
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<script language="JavaScript" type="text/javascript">
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+</script><noscript><img src="http://eventia.d1.sc.omtrdc.net/b/ss/eventiadev/1/H.25.2--NS/0"
+height="1" width="1" border="0" alt="" /></noscript>
+ End SiteCatalyst code version: H.25.2. -->
+<!-- next script calls the mobile nav - also css and js just inside head -->
+<script src="redesignjs/jquery_002.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#menu').slicknav();
+    });
+</script>
+<!-- NEW SiteCatalyst code version -->
+<script type="text/javascript">_satellite.pageBottom();</script>
+<div id="fancybox-tmp">
+</div>
+<div id="fancybox-loading">
+	<div>
+	</div>
+</div>
+<div id="fancybox-overlay">
+</div>
+<div id="fancybox-wrap">
+	<div id="fancybox-outer">
+		<div class="fancybox-bg" id="fancybox-bg-n">
+		</div>
+		<div class="fancybox-bg" id="fancybox-bg-ne">
+		</div>
+		<div class="fancybox-bg" id="fancybox-bg-e">
+		</div>
+		<div class="fancybox-bg" id="fancybox-bg-se">
+		</div>
+		<div class="fancybox-bg" id="fancybox-bg-s">
+		</div>
+		<div class="fancybox-bg" id="fancybox-bg-sw">
+		</div>
+		<div class="fancybox-bg" id="fancybox-bg-w">
+		</div>
+		<div class="fancybox-bg" id="fancybox-bg-nw">
+		</div>
+		<div id="fancybox-content">
+		</div>
+		<a id="fancybox-close"></a>
+		<div id="fancybox-title">
+		</div>
+		<a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a>
+	</div>
+</div>
+</body>
+</html>

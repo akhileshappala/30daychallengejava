@@ -1,0 +1,6 @@
+
+/* Comment out the following sitealert line to hide the warning across the top of all nafsa.org pages. 
+And uncomment it to display the warning.
+Text should be edited in BOTH \customtemplates\mainhome.master and \customtemplates\main.master. */
+
+/*.sitealert { display: block !important }*/

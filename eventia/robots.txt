@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /work/
+Disallow: /widg/
+Disallow: /inter/
+Disallow: /Learn_About_NAFSA/Membership/Campaigns/ # membership marketing campaigns
+Disallow: /Learn_About_NAFSA/Leadership/WLM/ # WLM 2015 pages
+Disallow: /Attend_Events/In-Person/Workshops/Resources/ # Workshop Resources
+Disallow: /Staff_Resources/ # staff only
+Disallow: /Get_Involved/Marketing_With_NAFSA/Special_Events/ # Global Partners Event
+Disallow: /Staff_Resources/Marketing_Services_and_Creative_Requests_Gateway/ # marketing services and creative requests 
+Disallow: /Explore_International_Education/Impact/Diversity/Diversity_Impact_Program_Welcome_Webinar/ # outdated page
